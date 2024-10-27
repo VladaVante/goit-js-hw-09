@@ -28,7 +28,7 @@ const submitData = event => {
         alert("Fill please all fields")
     } else {
         console.log(formData);
-        localStorage.clear();
+        localStorage.removeItem("feedback-form-state");
         formData.email = "";
         formData.message = "";
         form.elements.email.value = "";
